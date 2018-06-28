@@ -14,8 +14,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const api =
-    process.env.REACT_APP_API || "https://agile-journey-27634.herokuapp.com/api/notes";
+    // const api =
+    // process.env.REACT_APP_API || "https://agile-journey-27634.herokuapp.com/api/notes";
     axios
     .get("https://agile-journey-27634.herokuapp.com/api/notes")
       .then(response => {
