@@ -15,6 +15,10 @@ class CreateNote extends Component {
         this.setState({ [e.target.name]: e.target.value })
     }
 
+    componentWillUnmount() {
+        window.location.reload();
+    }
+
     saveNewNote = () => {
         const newNote = { title: this.state.title, body: this.state.body};
         axios
@@ -26,7 +30,6 @@ class CreateNote extends Component {
             .catch(err => {
                 console.error(err);
             })
-        window.location.reload();
     }
 
     render() { 
