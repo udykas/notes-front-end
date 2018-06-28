@@ -24,7 +24,7 @@ export default class DeleteNote extends Component {
         });
 
         axios
-            .delete(`http://localhost:5000/api/notes/${this.props.match.params.id}`)
+            .delete(`https://agile-journey-27634.herokuapp.com/api/notes/${this.props.match.params.id}`)
             .then(note => {
                 console.log(note, "Was successfully deleted")
             })

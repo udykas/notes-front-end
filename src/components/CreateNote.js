@@ -18,7 +18,7 @@ class CreateNote extends Component {
     saveNewNote = () => {
         const newNote = { title: this.state.title, body: this.state.body};
         axios
-            .post(`http://localhost:5000/api/notes`, newNote)
+            .post(`https://agile-journey-27634.herokuapp.com/api/notes`, newNote)
             .then(savedNote => {
                 this.setState({ title: '', body: '' })
                 console.log(savedNote.data)
