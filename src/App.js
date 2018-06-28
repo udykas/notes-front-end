@@ -17,7 +17,7 @@ class App extends Component {
     const api =
     process.env.REACT_APP_API || "https://agile-journey-27634.herokuapp.com/api/notes";
     axios
-    .get(api)
+    .get("https://agile-journey-27634.herokuapp.com/api/notes")
       .then(response => {
         this.setState(() => ({ notes: response.data }));
       })
