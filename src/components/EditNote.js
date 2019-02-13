@@ -23,9 +23,9 @@ class EditNote extends Component {
             })
     }
 
-    componentWillUnmount() {
-        window.location.reload();
-    }
+    // componentWillUnmount() {
+    //     window.location.reload();
+    // }
 
     handleNoteInput = e => {
         this.setState({ [e.target.name]: e.target.value })
