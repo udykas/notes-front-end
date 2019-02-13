@@ -15,7 +15,7 @@ class Note extends Component {
 
     componentDidMount() {
         axios
-            .get(`https://agile-journey-27634.herokuapp.com/api/notes/${this.props.match.params.id}`)
+            .get(`https://lambda-notes-back-end-93.herokuapp.com/api/notes/${this.props.match.params.id}`)
             .then(note => {
                 this.setState(() => ({ note: note.data }));
             })

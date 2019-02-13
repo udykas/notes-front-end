@@ -15,7 +15,7 @@ class App extends Component {
 
   componentDidMount() {
     axios
-    .get("https://agile-journey-27634.herokuapp.com/api/notes")
+    .get("https://lambda-notes-back-end-93.herokuapp.com/api/notes")
       .then(response => {
         this.setState(() => ({ notes: response.data }));
       })
